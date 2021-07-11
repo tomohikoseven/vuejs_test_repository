@@ -12,6 +12,7 @@
   <div>
     <p>{{ message }}</p>
     <input v-model="message" />
+    <div v-if="seen">Now you see me</div>
   </div>
 </template>
 
@@ -24,6 +25,7 @@ export default defineComponent({
     return {
       counter: 0,
       message: "Hello Vue",
+      seen: true,
     };
   },
 });
